@@ -22,7 +22,7 @@ function Login() {
     const handleButtonClick = (e) => {
         e.preventDefault();
 
-        // check validation
+        // Check validation
         const message = checkValidData(form.email, form.password, isSignIn ? "" : form.name);
         setErrorMessage(message);
 
