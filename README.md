@@ -14,3 +14,13 @@ I implemented localStorage to persist tasks, so the data remains even after refr
 In addition, I added features to edit, delete, and mark tasks as completed. The completed tasks are visually updated using conditional styling.
 
 This helped me understand state management, handling arrays, working with localStorage, and debugging errors in React.
+
+
+
+Today, I implemented the search functionality using a Search API. I handled user input and made dynamic API calls based on the search query.
+
+I stored the fetched results in state using useState and displayed them on the UI using .map(). I also fixed an issue where data was not rendering due to missing return in the map function.
+
+Additionally, I handled cases where no results are found and ensured the UI updates correctly based on the response.
+
+This helped me practice API integration, state management, handling dynamic data, and debugging React rendering issues.
