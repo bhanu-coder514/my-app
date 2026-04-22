@@ -24,3 +24,13 @@ I stored the fetched results in state using useState and displayed them on the U
 Additionally, I handled cases where no results are found and ensured the UI updates correctly based on the response.
 
 This helped me practice API integration, state management, handling dynamic data, and debugging React rendering issues.
+
+
+
+Today, I learned and implemented the `useMemo` hook in my React project.
+
+I understood how `useMemo` helps in optimizing performance by memoizing expensive calculations and preventing unnecessary re-computations during re-renders. I applied it to improve the efficiency of filtering/search logic so that the calculation only runs when dependencies change.
+
+I also explored the difference between `useMemo` and `useEffect`, and when to use each of them in real-world scenarios.
+
+This helped me gain a better understanding of performance optimization, efficient rendering, and handling large or dynamic data in React.
