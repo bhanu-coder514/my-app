@@ -1,4 +1,5 @@
 import './App.css'
+import InfiniteScroll from './components/InfiniteScroll'
 import Login from './components/Login'
 import PerformanceOptimization from './components/PerformanceOptimization'
 import Search from './components/Search'
@@ -11,7 +12,8 @@ function App() {
       {/* <Login/> */}
       {/* <Todolist/> */}
       {/* <Search/> */}
-      <PerformanceOptimization/>
+      {/* <PerformanceOptimization/> */}
+      <InfiniteScroll/> 
       
     </div>
   )
