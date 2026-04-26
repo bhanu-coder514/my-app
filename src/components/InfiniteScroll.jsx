@@ -1,12 +1,13 @@
 import React, { useEffect, useRef, useState } from 'react'
 import Card from './Card';
+import Header from './Header';
 
 const InfiniteScroll = () => {
 
   const [Products, SetProducts] = useState([]);
   const [loading, setLoading] = useState(false);
-  const [page,setPage] = useState(1);
-  const [HasMore,setHasMore] = useState(true);
+  const [page, setPage] = useState(1);
+  const [HasMore, setHasMore] = useState(true);
   const lastElementRef = useRef(null);
   const loadingRef = useRef(false);
 
@@ -26,14 +27,14 @@ const InfiniteScroll = () => {
       observer.observe(lastElementRef.current);
     }
 
-    
+
     return () => observer.disconnect();
 
   }, [])
 
   useEffect(() => {
 
-    if(!HasMore) return;
+    if (!HasMore) return;
 
     console.log("api useEffect call");
 
@@ -42,18 +43,18 @@ const InfiniteScroll = () => {
 
   useEffect(() => {
     loadingRef.current = loading;
-  },[loading])
+  }, [loading])
 
   const getData = async () => {
 
-    if(loading) return;
+    if (loading) return;
 
     setLoading(true);
 
     const data = await fetch(`https://dummyjson.com/products?limit=20&skip=${(page - 1) * 20}`);
     const json = await data.json();
 
-    if(json.products.length === 0){
+    if (json.products.length === 0) {
       setHasMore(false);
     }
 
@@ -69,11 +70,15 @@ const InfiniteScroll = () => {
 
   return (
     <>
+
+      <Header/>
+      
       <div className='flex flex-wrap'>
         {Products.map((Product) => {
           return (
             <Card
               key={Product.id}
+              id={Product.id}
               title={Product?.title}
               description={Product.description}
               brand={Product.brand}

@@ -34,3 +34,12 @@ I understood how `useMemo` helps in optimizing performance by memoizing expensiv
 I also explored the difference between `useMemo` and `useEffect`, and when to use each of them in real-world scenarios.
 
 This helped me gain a better understanding of performance optimization, efficient rendering, and handling large or dynamic data in React.
+
+
+Today, I implemented the remove from cart functionality using Redux in my React application.
+
+I created a new reducer to handle item removal by filtering out the selected item using its id. I then connected this logic to the UI by adding a "Remove" button in the cart component and dispatching the action on click.
+
+I also improved my understanding of how Redux Toolkit handles state updates, especially using immutable operations like filter to update arrays.
+
+This helped me strengthen my knowledge of state management, Redux actions, and handling dynamic UI updates based on user interactions.
