@@ -12,7 +12,7 @@ const cart = () => {
       {
         cartitems.length > 0 ? 
         cartitems.map((item) => (
-          <CartCard key={item.id} id={item.id} image={item.image} title={item.title} price={item.price}/>
+          <CartCard key={item.id} id={item.id} image={item.image} title={item.title} price={item.price} quantity={item.quantity}/>
         )) : <h1 className='text-center text-2xl font-bold'>Cart is empty</h1>
       }
       </div>
