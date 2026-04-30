@@ -128,7 +128,9 @@ const InfiniteScroll = () => {
             return (
               <li 
                 key={item}
-                className='mt-2 hover:bg-amber-100 cursor-pointer'>{item}</li>
+                className='mt-2 hover:bg-amber-100 cursor-pointer'
+                onMouseDown={(e) => e.preventDefault()}
+                >{item}</li>
             )
           })}
 
