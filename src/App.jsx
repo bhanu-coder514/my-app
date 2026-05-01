@@ -8,7 +8,6 @@ import ProductsPage from './components/ProductsPage'
 import Search from './components/Search'
 import Todolist from './components/Todolist'
 import Cart from './components/Cart'
-import Hirent from './components/Hirent'
 import JobFeedIntegrationExample from './components/JobFeedIntegrationExample'
 
 function App() {
