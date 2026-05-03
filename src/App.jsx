@@ -8,7 +8,6 @@ import ProductsPage from './components/ProductsPage'
 import Search from './components/Search'
 import Todolist from './components/Todolist'
 import Cart from './components/Cart'
-import JobFeedIntegrationExample from './components/JobFeedIntegrationExample'
 
 function App() {
 
@@ -23,7 +22,6 @@ function App() {
         <Route path="/performance" element={<PerformanceOptimization />} />
         <Route path="/infinite" element={<InfiniteScroll />} />
         <Route path='/cart' element={<Cart/>}></Route>
-        <Route path='/hirent' element={<JobFeedIntegrationExample/>}></Route>
       </Routes>
     </>
   )
